@@ -1,18 +1,12 @@
 <?php
 	include 'master/config.php';
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Панель управления Мастер-Сервером</title>
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link type="text/css" rel="StyleSheet" href="css/bootstrap.min.css" />
-	<script src="js/bootstrap.js"></script>
-	<script src="js/bootstrap-alert.js"></script>
-	<script src="js/bootstrap-button.js"></script>
-	<script src="js/jquery.js"></script>
-	<script src="js/bystolen.js"></script>
 </head>
 <body>
  <div class="navbar navbar-fixed-top">
@@ -54,5 +48,9 @@
 			</table>
 	<span class="label label-info">Powered by Stolen</span>
 </div>
+
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bystolen.js"></script>
 </body>
 </html>

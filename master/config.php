@@ -1,6 +1,6 @@
 <?php
 
-	$host = "37.143.9.246"; 
+	$host = "127.0.0.1"; 
 	$user = "fake";
 	$pass = "fake";
 	$db = "fake";
@@ -12,9 +12,9 @@
 	
 	//$sort = 0; // 1 - включить сортировку по пингу на клиенте, 0 - выкючить
 
-	mysql_connect($host, $user, $pass);   
+	mysql_pconnect($host, $user, $pass);   
 	mysql_select_db($db); 
 	
-	$settings=mysql_fetch_array(mysql_query("SELECT * FROM `settings`"));
+	if(!$settings=mysql_fetch_assoc(mysql_query("SELECT * FROM `settings`"))) die("mysql error");
 	
 ?>

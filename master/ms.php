@@ -16,7 +16,7 @@
 	socket_bind($socket, $settings['host'], $settings['port']);
 	
 	while (true){
-		$status = mysql_fetch_array(mysql_query("SELECT `status` FROM `$settings_table`"));
+		$status = mysql_fetch_assoc(mysql_query("SELECT `status` FROM `$settings_table`"));
 		
 		if(!$status['0'])
 			exit;
